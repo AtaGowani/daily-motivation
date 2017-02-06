@@ -3,8 +3,7 @@
   "name": "DailyMotivation",
   "version": "2.1",
 
-	"description": "Start every search with motivation. This extention presents you with a motivational quote everytime you
-	open a new tab.",
+	"description": "Start every search with motivation. This extention presents you with a motivational quote everytime you open a new tab.",
 	"icons": {"16": "images/icon.png",
          	  "48": "images/icon.png",
          	  "128":"images/icon.png" },
