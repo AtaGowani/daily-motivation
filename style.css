@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  background-color: #098;
+  animation: colorChange 10s infinite;
+  -webkit-animation-name: colorChange 10s infinite;
+}
+span{
+  width: 100%;
+  font-size: 35px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #064961;
+}
+
+.water {
+  padding-left: 40px;
+}
+
+.footer {
+  font-weight: 400;
+  color: #787878;
+}
+
+.footer a,:visited {
+  color: #494949;
+  text-decoration: none;
+  font-weight: 600;
+}
+@-webkit-keyframes colorChange {
+  0% {
+    background-color: #FFB7B7;
+  }
+  10% {
+    background-color: #FFCEB7;
+  }
+  20% {
+    background-color: #FFF6B7;
+  }
+  30% {
+    background-color: #B7FFC3;
+  }
+  40% {
+    background-color: #B7FFEE;
+  }
+  50% {
+    background-color: #B7E9FF;
+  }
+  60%{
+    background-color: #B7B9FF;
+  }
+  70%{
+    background-color: #E9B7FF;
+  }
+  80%{
+    background-color: #FEB7FF;
+  }
+  90%{
+    background-color: #FFB7DB;
+  }
+  100%{
+    background-color: #FFB7B7;
+  }
+}
+.blockQ{
+  padding: 0 100px 0 100px;
+  margin-top: 100px;
+}
