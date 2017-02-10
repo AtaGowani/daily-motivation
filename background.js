@@ -7,7 +7,7 @@
   canvas.height = window.innerHeight;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
-  ctx.lineWidth = .1;
+  ctx.lineWidth = .2;
   ctx.strokeStyle = color;
 
   var mousePosition = {
