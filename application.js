@@ -1,6 +1,4 @@
-'use strict';
-
-var nicePhrases = ["If you want to achieve greatness stop asking for permission. ~Anonymous",
+var motivation = ["If you want to achieve greatness stop asking for permission. ~Anonymous",
 "Things work out best for those who make the best of how things work out. ~John Wooden",
 "To live a creative life, we must lose our fear of being wrong. ~Anonymous", 
 "If you are not willing to risk the usual you will have to settle for the ordinary. ~Jim Rohn"
@@ -209,7 +207,6 @@ var nicePhrases = ["If you want to achieve greatness stop asking for permission.
 "Ever tried. Ever failed. No matter. Try again. Fail again. Fail better. — Samuel Beckett",
 "A goal is a dream with a deadline. — Napoleon Hill",
 "What you do today can improve all your tomorrows. — Ralph Marston",
-"Infuse your life with action. Don’t wait for it to happen. Make it happen. Make your own future. Make your own hope. Make your own love. And whatever your beliefs, honor your creator, not by passively waiting for grace to come down from upon high, but by doing what you can to make grace happen…yourself, right now, right down here on Earth. — Bradley Whitford",
 "The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself. — Mark Caine",
 "The most effective way to do it, is to do it. — Amelia Earhart",
 "You need to overcome the tug of people against you as you reach for high goals. — George S. Patton",
@@ -282,11 +279,11 @@ var nicePhrases = ["If you want to achieve greatness stop asking for permission.
 "In every difficult situation is potential value. Believe this, then begin looking for it. — Norman Vincent Peale",
 "Believe with all of your heat that you will do what you were made to do. — Orison Swett Marden",
 "We are still masters of our fate. We are still captains of our souls. — Winston Churchill",
-"We are still masters of our fate. We are still captains of our souls. — Winston Churchill"
+"There is an 'empty headed moron' in The White House -- rethink impossible."
 ];
 
 // Get random phrase
-var random = nicePhrases[Math.floor(Math.random() * nicePhrases.length)];
+var random = motivation[Math.floor(Math.random() * motivation.length)];
 // console.log(random);
 
-document.getElementById("rathernice").textContent = random.toString();
+document.getElementById("DailyMotivation").innerHTML = random;
