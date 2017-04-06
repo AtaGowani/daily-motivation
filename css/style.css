@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+span{
+  width: 100%;
+  font-size: 35px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.background{
+  height: 40px;
+  width: 80px;
+}
+
+#Theme1{
+  background: #11E9FF;
+}
+
+#Theme2{
+  background: #11FFBA;
+}
+
+#Theme3{
+  background: #000000;
+}
+
+#footer {
+  font-weight: 400;
+  color: #787878;
+}
+
+#footer a, #footer:visited {
+  color: #494949;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#connecting-dots {
+  box-sizing: border-box;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#blockQ{
+  padding: 0 180px 0 180px;
+  margin-top: 150px;
+  color: #000;
+  }
+
+.cc{
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:25px;
+}
+
+.fa-gear{
+  color: #000000;
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+opacity: 0.7;
+background: #F9F9F9;
+}
+
+.main-menu {
+background:#fff;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+right:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#064961;
+font-family: arial;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:10px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+font-family: 'Titillium Web', sans-serif;
+font-size: 15px;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#5fa2db;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #000;
+}
