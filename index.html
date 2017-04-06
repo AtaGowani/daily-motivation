@@ -87,7 +87,7 @@
         canvas.height = window.innerHeight;
         canvas.style.display = 'block';
         ctx.fillStyle = colorDot;
-        ctx.lineWidth = .2;
+        ctx.lineWidth = .1;
         ctx.strokeStyle = colorLine;
 
         var mousePosition = {
@@ -97,7 +97,7 @@
 
         var dots = {
           nb: 600,
-          distance: 60,
+          distance: 50,
           d_radius: 100,
           array: []
       };
@@ -198,6 +198,7 @@
           case "Theme1":
             document.body.style.background = '#0F2043';
             document.getElementById('blockQ').style.color = '#D5A458';
+            //document.a.style.color = '#D5A458';
             elements = document.getElementsByClassName('main-menu');
             for(i = 0, len = elements.length; i < len; i++){
               elements[i].style.background = '#0F2043';
@@ -216,6 +217,7 @@
           case "Theme2":
             document.body.style.background = '#F2F2F2';
             document.getElementById('blockQ').style.color = '#561210';
+            //document.a.style.color = '#561210';
             elements = document.getElementsByClassName('main-menu');
             for(i = 0, len = elements.length; i < len; i++){
               elements[i].style.background = '#F2F2F2';
@@ -234,7 +236,9 @@
           case "Theme3":
             document.body.style.background = '#3F2B2C'
             document.getElementById('blockQ').style.color = '#EC3047';
+            //document.a.style.color = '#EC3047';
             elements = document.getElementsByClassName('main-menu');
+            //console.log(document.getElementById('newID'));
             for(i = 0, len = elements.length; i < len; i++){
               elements[i].style.background = '#3F2B2C';
               elements[i].style.color = '#EC3047';
