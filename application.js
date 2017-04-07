@@ -284,6 +284,11 @@ var motivation = ["If you want to achieve greatness stop asking for permission. 
 
 // Get random phrase
 var random = motivation[Math.floor(Math.random() * motivation.length)];
-// console.log(random);
+console.log(random);
 
 document.getElementById("DailyMotivation").innerHTML = random;
+
+
+
+
+
