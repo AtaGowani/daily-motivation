@@ -25,7 +25,7 @@
                 <li>
                 <i class="fa"></i>
                   <span class="nav-text">
-                    Change Background
+                    Select Background
                   </span>
                 </li>
                 <li>
@@ -46,14 +46,14 @@
                 <li>
                 <i class="fa"></i>
                   <span class="nav-text">
-                    <div class="background" id="Theme3" onclick="javascript:setCookie.call(this)">></div>
+                    <div class="background" id="Theme3" onclick="javascript:setCookie.call(this)"></div>
                   </span>
                 </li>
                 <div class="background"></div>
                 <li>
                 <i class="fa"></i>
                   <span class="nav-text">
-                    <div class="background" id="Default" onclick="javascript:setCookie.call(this)">DEFAULT</div>
+                    <div class="background" id="Default" onclick="javascript:setCookie.call(this)"></div>
                   </span>
                 </li>
             </ul>
@@ -67,8 +67,8 @@
     <script src="application.js"></script> <!--Javascript that gets the random quote-->
 
     <div class="fixed bottom-0 left-0 m3" id="footer">
-      <p>Made by <a href="http://www.atagowani.com">Ata Gowani</a>.</p>
-      <p class="cc">Logo graphic by <a href="http://www.flaticon.com/authors/fadyucf">FadyUCF</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a></p> <!--attribution needed for CC-->
+      <p>Made by <a href="http://www.atagowani.com" class="linkColor">Ata Gowani</a>.</p>
+      <p class="cc">Logo graphic by <a href="http://www.flaticon.com/authors/fadyucf" class="linkColor">FadyUCF</a> from <a href="http://www.flaticon.com/" class="linkColor">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" class="linkColor">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker" class="linkColor">Logo Maker</a></p> <!--attribution needed for CC-->
     </div>
 
     <script>
@@ -208,6 +208,10 @@
             for(i = 0, len = elements.length; i < len; i++){
               elements[i].style.color = '#D5A458';
             }
+            elements = document.getElementsByClassName('linkColor');
+            for(i = 0, len = elements.length; i < len; i++){
+              elements[i].style.color = '#AD8343';
+            }
             document.getElementById('footer').style.color = '#D5A458';
             colorDot = '#79CEDC';
             colorLine = '#79CEDC';
@@ -226,6 +230,10 @@
             elements = document.getElementsByClassName('fa-gear');
             for(i = 0, len = elements.length; i < len; i++){
               elements[i].style.color = '#561210';
+            }
+            elements = document.getElementsByClassName('linkColor');
+            for(i = 0, len = elements.length; i < len; i++){
+              elements[i].style.color = '#300908';
             }
             document.getElementById('footer').style.color = '#561210';
             colorDot = '#EF9121';
@@ -246,6 +254,10 @@
             elements = document.getElementsByClassName('fa-gear');
             for(i = 0, len = elements.length; i < len; i++){
               elements[i].style.color = '#EC3047';
+            }
+            elements = document.getElementsByClassName('linkColor');
+            for(i = 0, len = elements.length; i < len; i++){
+              elements[i].style.color = '#B02536';
             }
             document.getElementById('footer').style.color = '#EC3047';
             colorDot = '#ACA287';

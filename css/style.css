@@ -14,20 +14,24 @@ span{
 }
 
 .background{
-  height: 40px;
-  width: 80px;
+  height: 55px;
+  width: 100px;
 }
 
 #Theme1{
-  background: #11E9FF;
+  background: url(../images/Theme1.png);
 }
 
 #Theme2{
-  background: #11FFBA;
+  background: url(../images/Theme2.png);
 }
 
 #Theme3{
-  background: #000000;
+  background: url(../images/Theme3.png);
+}
+
+#Default{
+  background: url(../images/Default.png);
 }
 
 #footer {
@@ -52,7 +56,7 @@ canvas {
 #blockQ{
   padding: 0 180px 0 180px;
   margin-top: 150px;
-  color: #000;
+  color: #064961;
   }
 
 .cc{
@@ -78,12 +82,12 @@ font-size:25px;
 .main-menu:hover, nav.main-menu.expanded {
 width:250px;
 overflow:visible;
-opacity: 0.7;
-background: #F9F9F9;
+opacity: 0.8;
+background: #FFFFFF;
 }
 
 .main-menu {
-background:#fff;
+background:#FFFFFF;
 border-right:1px solid #e5e5e5;
 position:absolute;
 top:0;
@@ -124,7 +128,7 @@ display:table-cell;
 vertical-align:middle;
 width:190px;
 font-family: 'Titillium Web', sans-serif;
-font-size: 15px;
+font-size: 25px;
 }
 
 .no-touch .scrollable.hover {
@@ -136,11 +140,14 @@ overflow-y:auto;
 overflow:visible;
 }
 
-a, a:hover,a:focus {
-  color: #494949;
+a, a:hover, a:focus {
   text-decoration: none;
   font-weight: 600;
   text-decoration:none;
+}
+
+.linkColor{
+  color: #494949;
 }
 
 nav {
@@ -167,5 +174,6 @@ padding:0;
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  color: #000;
+  color: #064961;
+  background: #FFFFFF;
 }
