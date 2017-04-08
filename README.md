@@ -2,4 +2,4 @@
 # DailyMotivation
 Chrome extension that displays motivational quotes every time a new tab is opened.
 # Current Version
-Version 2.3.0
+Version 2.3.2
