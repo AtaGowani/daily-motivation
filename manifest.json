@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "DailyMotivation",
-  "version": "2.3.0",
+  "version": "2.3.3",
 
 	"description": "Start every search with motivation. This extention presents you with a motivational quote everytime you open a new tab.",
 	"icons": {"16": "images/icon.png",
@@ -13,6 +13,6 @@
       },
 
   "permissions": [
-  "bookmarks"
+    
 ]
 }
