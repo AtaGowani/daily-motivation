@@ -3,4 +3,4 @@
 Chrome extension that displays motivational quotes every time a new tab is opened.
 Build using Pure HTML and CSS
 # Current Version
-Version 2.3.2
+Version 2.3.3
