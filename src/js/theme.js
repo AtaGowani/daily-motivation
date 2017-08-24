@@ -17,12 +17,12 @@ function setTheme(userPreference){
         elements[i].style.color = '#D5A458'
       }
       elements = document.getElementsByClassName('fa-gear')
-      for(i = 0, len = elements.length; i < len; i++;)
+      for(i = 0, len = elements.length; i < len; i++)
       {
         elements[i].style.color = '#D5A458'
       }
       elements = document.getElementsByClassName('linkColor')
-      for(i = 0, len = elements.length; i < len; i++;)
+      for(i = 0, len = elements.length; i < len; i++)
       {
         elements[i].style.color = '#AD8343'
       }
@@ -38,18 +38,18 @@ function setTheme(userPreference){
       document.getElementById('Theme2').style.display = 'none'
       //document.a.style.color = '#561210'
       elements = document.getElementsByClassName('main-menu')
-      for(i = 0, len = elements.length i < len i++)
+      for(i = 0, len = elements.length; i < len; i++)
       {
         elements[i].style.background = '#F2F2F2'
         elements[i].style.color = '#561210'
       }
       elements = document.getElementsByClassName('fa-gear')
-      for(i = 0, len = elements.length i < len i++)
+      for(i = 0, len = elements.length; i < len; i++)
       {
         elements[i].style.color = '#561210'
       }
       elements = document.getElementsByClassName('linkColor')
-      for(i = 0, len = elements.length i < len i++)
+      for(i = 0, len = elements.length; i < len; i++)
       {
         elements[i].style.color = '#300908'
       }
