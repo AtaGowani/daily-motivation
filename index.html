@@ -2,85 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"> <!--used for styling footer and block that holds the quotes-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="js-cookies/js.cookie.js"></script>
-    <script src="src/js/theme.js"></script>
+    <script src="src/library/jquery-3.2.1.min.js"></script>
     <script src="src/js/background.js"></script>
-    <title>DailyMotivation</title>
+    <script src="src/js/app.js"></script>
+    <title>New Tab</title>
   </head>
   
   <body>
-  <canvas id='connecting-dots'></canvas> <!--canvas for the background interactive feature-->
-      <nav class="main-menu">
-            <ul>
-                <li>
-                  <i class="fa fa-gear"></i>
-                </li>
-                <li>
-                  <i class="fa"></i>
-                  <span class="nav-text">
-                    Select Background
-                  </span>
-                </li>
-                <li>
-                  <i class="fa"></i>
-                  <span class="nav-text">
-                    <div class="container" id="Theme1">
-                      <div class="background"></div> 
-                      <div class="overlay">
-                        <div class="text">Starry Night</div>
-                      </div>
-                    </div>
-                  </span>
-                </li>
-                <li>
-                <i class="fa"></i>
-                  <span class="nav-text">
-                    <div class="container" id="Theme2">
-                      <div class="background"></div>
-                      <div class="overlay">
-                        <div class="text">Autumn Breeze</div>
-                      </div>
-                    </div>
-                  </span>
-                </li>
-                <li>
-                  <i class="fa"></i>
-                  <span class="nav-text">
-                    <div class="container" id="Theme3">
-                      <div class="background"></div>
-                      <div class="overlay">
-                        <div class="text">Strawberry Drizzle</div>
-                      </div>
-                    </div>
-                  </span>
-                </li>
-                <li>
-                  <i class="fa"></i>
-                  <span class="nav-text">
-                    <div class="container" id="Default">
-                    <div class="background"></div>
-                    <div class="overlay">
-                      <div class="text">Minimalistic</div>
-                    </div>
-                    </div>
-                  </span>
-                </li>
-            </ul>
-        </nav>
-      <div id="blockQ">
-        <p class="heading center">
-          <span id="DailyMotivation">Will be replaced by a quote.</span>
-        </p>
+    
+    <div class="quote-block">
+      <div>
+        <p id="quote"></p>
+        <p id="author"></p>
+      </div>
     </div>
+    
 
-    <script src="src/js/application.js"></script> <!--Javascript that gets the random quote-->
-
-    <div class="fixed bottom-0 left-0 m3" id="footer">
-      <p>Made by <a href="http://www.atagowani.com" class="linkColor">Ata Gowani</a>.</p>
-      <p class="cc">Logo graphic by <a href="http://www.flaticon.com/authors/fadyucf" class="linkColor">FadyUCF</a> from <a href="http://www.flaticon.com/" class="linkColor">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" class="linkColor">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker" class="linkColor">Logo Maker</a></p> <!--attribution needed for CC-->
-    </div>
+    <footer>
+      <p>Made with <img src="src/imgs/Magic.svg" alt="magic"> by <a href="http://www.atagowani.com" class="linkColor">Ata Gowani</a>.</p>
+    </footer>
+    <div id="wrap"></div>
   </body>
 </html>

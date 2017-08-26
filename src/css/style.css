@@ -1,214 +1,85 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
-@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,700');
 
-span {
-  width: 100%;
-  font-size: 35px;
-  font-family: 'Josefin Slab', serif;
-}
-
-.container {
-  position: relative;
-  width: 150px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+html, 
+body {
   height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000000;
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 0.5;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.heading {
-  font-size: 45px;
-  font-weight: 800;
-}
-
-.background {
-  height: 95px;
-  width: 150px;
-  margin-top: 50px;
-  display: block;
-}
-
-#Theme1 {
-  background: url(../imgs/Theme1.png);
-}
-
-#Theme2 {
-  background: url(../imgs/Theme2.png);
-}
-
-#Theme3 {
-  background: url(../imgs/Theme3.png);
-}
-
-#Default {
-  background: url(../imgs/Default.png);
-}
-
-#footer {
-  font-weight: 400;
-  color: #787878;
-}
-
-#connecting-dots {
-  box-sizing: border-box;
-}
-
-canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-#blockQ {
-  padding: 0 180px 0 180px;
-  margin-top: 150px;
-  color: #064961;
-  }
-
-.cc {
-  font-size: 10px;
-  padding: 0;
   margin: 0;
-}
-
-.fa {
-position: relative;
-display: table-cell;
-width: 60px;
-height: 36px;
-text-align: center;
-vertical-align: middle;
-font-size:25px;
-}
-
-.fa-gear {
-  color: #000000;
-}
-
-.main-menu:hover, nav.main-menu.expanded {
-width:250px;
-overflow:visible;
-opacity: 0.8;
-background: #FFFFFF;
-}
-
-.main-menu {
-background:#FFFFFF;
-border-right:1px solid #e5e5e5;
-position:absolute;
-top:0;
-bottom:0;
-height:100%;
-right:0;
-width:60px;
-overflow:hidden;
--webkit-transition:width .05s linear;
-transition:width .05s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
-}
-
-.main-menu ul {
-margin:7px 0;
-}
-
-.main-menu li {
-position:relative;
-display:block;
-width:250px;
-}
-
-.main-menu .nav-icon {
-position:relative;
-display:table-cell;
-width:60px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:10px;
-}
-
-.main-menu .nav-text {
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:190px;
-font-family: 'Titillium Web', sans-serif;
-font-size: 25px;
-}
-
-.no-touch .scrollable.hover {
-overflow-y:hidden;
-}
-
-.no-touch .scrollable.hover:hover {
-overflow-y:auto;
-overflow:visible;
-}
-
-a, a:hover, a:focus {
-  text-decoration: none;
-  font-weight: 600;
-  text-decoration:none;
-}
-
-.linkColor {
-  color: #494949;
-}
-
-nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
-}
-
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
-}
-
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  color: #064961;
-  background: #FFFFFF;
+  background: transparent;
+}
+
+#wrap {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+
+.quote-block {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  z-index: 1000;
+  color: #000;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.quote-block div {
+  margin: 0 auto;
+  width: auto;
+}
+
+.quote-block #quote {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.quote-block #author {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+
+footer img {
+  height: 57.31px;
+  width: 59px;
+  margin-right: -1.2rem;
+  margin-bottom: -.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+footer a:hover {
+  font-weight: 200;
 }
