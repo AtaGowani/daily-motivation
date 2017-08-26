@@ -2,13 +2,13 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
 
-span{
+span {
   width: 100%;
   font-size: 35px;
   font-family: 'Josefin Slab', serif;
 }
 
-.container{
+.container {
   position: relative;
   width: 150px;
 }
@@ -46,26 +46,26 @@ span{
   font-weight: 800;
 }
 
-.background{
+.background {
   height: 95px;
   width: 150px;
   margin-top: 50px;
   display: block;
 }
 
-#Theme1{
+#Theme1 {
   background: url(../imgs/Theme1.png);
 }
 
-#Theme2{
+#Theme2 {
   background: url(../imgs/Theme2.png);
 }
 
-#Theme3{
+#Theme3 {
   background: url(../imgs/Theme3.png);
 }
 
-#Default{
+#Default {
   background: url(../imgs/Default.png);
 }
 
@@ -88,13 +88,13 @@ canvas {
   bottom: 0;
 }
 
-#blockQ{
+#blockQ {
   padding: 0 180px 0 180px;
   margin-top: 150px;
   color: #064961;
   }
 
-.cc{
+.cc {
   font-size: 10px;
   padding: 0;
   margin: 0;
@@ -110,7 +110,7 @@ vertical-align: middle;
 font-size:25px;
 }
 
-.fa-gear{
+.fa-gear {
   color: #000000;
 }
 
@@ -181,7 +181,7 @@ a, a:hover, a:focus {
   text-decoration:none;
 }
 
-.linkColor{
+.linkColor {
   color: #494949;
 }
 
@@ -206,7 +206,7 @@ padding:0;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
 
-body{
+body {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #064961;
