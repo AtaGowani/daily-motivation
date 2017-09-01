@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/AtaGowani/DailyMotivation/master/.github/logo.png" alt="logo" align="center" height="5rem">
+<img src="https://raw.githubusercontent.com/AtaGowani/DailyMotivation/master/.github/logo.png" alt="logo" align="center" height="100px">
 <h1 align="center">Daily Motivation</h1>
 
 ## Whaaat?!
