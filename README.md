@@ -1,6 +1,8 @@
-![icon](https://cloud.githubusercontent.com/assets/19475663/24636063/29055c2c-189d-11e7-9d4e-cd0a1798cf67.png)
-# DailyMotivation
-Chrome extension that displays motivational quotes every time a new tab is opened.
-Build using Pure HTML and CSS
-# Current Version
-Version 2.3.3
+<img src="https://raw.githubusercontent.com/AtaGowani/DailyMotivation/master/.github/logo.png" alt="logo" align="center">
+<h1 align="center">Daily Motivation</h1>
+
+## Whaaat?!
+
+A Chrome extension that displays a new motivational quote every time a new tab is opened and provides you with a fun interactive background to play with!
+
+Build using Vanilla HTML, CSS, and JS.
