@@ -65,6 +65,21 @@ footer {
   bottom: 0;
   padding: 0 1rem;
   font-weight: 400;
+  width: 100%;
+  display: flex;
+}
+
+footer p {
+  display: inline-block;
+  flex: 1;
+}
+
+footer .downloadExtension {
+  text-align: right;
+  flex: 1;
+  vertical-align: bottom;
+  padding-right: 2rem;
+  padding-top: 2rem;
 }
 
 footer img {
@@ -81,5 +96,6 @@ footer a {
 }
 
 footer a:hover {
-  font-weight: 200;
+  opacity: 0.5;
+  font-weight: 700;
 }
