@@ -12,7 +12,6 @@ $(document).ready(function(){
   })
   
   $(window).mouseleave(function(e) {
-    console.log(window.innerHeight)
     mousePos.x = -1
     mousePos.y = -1
   })
