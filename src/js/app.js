@@ -18,13 +18,12 @@ function newQuote() {
   loadJSON(function(response) {
     // Parse JSON string into object
     var quotes = JSON.parse(response)
-    var randomNumber = Math.random() * Object.keys(quotes).length
+    var randomNumber = Math.random() * (Object.keys(quotes).length - 1)
     randomNumber = Math.round(randomNumber)
     quote = quotes[randomNumber].quote
     author = quotes[randomNumber].author
     document.getElementById('quote').innerHTML = quote
     document.getElementById('author').innerHTML = author
-    console.log(quote)
   })
 }
 
