@@ -1,3 +1,4 @@
 .DS_store
 manifest.json
 ChromeExtensionSource
+node_modules
