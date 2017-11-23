@@ -1,7 +1,7 @@
 let quote = '';
 let author = '';
 
-function loadJSON(callback) {  
+function loadJSON(callback) {
 
   let xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -10,12 +10,12 @@ function loadJSON(callback) {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
     }
-  }
+  };
   xobj.send(null);
 }
 
 function newQuote() {
-  loadJSON((response) => {
+  loadJSON(response => {
     // Parse JSON string into object
     let quotes = JSON.parse(response);
     let randomNumber = Math.random() * (Object.keys(quotes).length - 1);
@@ -24,7 +24,7 @@ function newQuote() {
     author = quotes[randomNumber].author;
     document.getElementById('quote').innerHTML = quote;
     document.getElementById('author').innerHTML = author;
-  })
+  });
 }
 
 let applyTheme = () => {
@@ -37,9 +37,9 @@ let applyTheme = () => {
   } else {
     clear();
   }
-}
+};
 
-let setTheme = function(theme) {
+let setTheme = function (theme) {
   if (theme === 'bubbles') {
     localStorage.setItem('theme', theme);
   } else if (theme === 'connected') {
@@ -47,9 +47,9 @@ let setTheme = function(theme) {
   } else {
     localStorage.clear();
   }
-  
+
   applyTheme();
-}
+};
 
 window.onload = applyTheme();
 window.onload = newQuote();

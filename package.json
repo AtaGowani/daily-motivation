@@ -1,0 +1,29 @@
+{
+  "name": "daily_motivation",
+  "version": "2.5.0",
+  "description": "Chrome extension to provide user with a motivational quote everytime a new tab is opened.",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d vendor",
+    "minify": "minify src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtaGowani/DailyMotivation.git"
+  },
+  "author": "Ata Gowani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtaGowani/DailyMotivation/issues"
+  },
+  "homepage": "https://github.com/AtaGowani/DailyMotivation#readme",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2"
+  }
+}
