@@ -209,4 +209,5 @@ div.overlay {
   font-size: 1rem;
   color: #ffffff;
   margin-top: 0;
+  min-width: 150px;
 }
