@@ -18,9 +18,6 @@
     "url": "https://github.com/AtaGowani/DailyMotivation/issues"
   },
   "homepage": "https://github.com/AtaGowani/DailyMotivation#readme",
-  "dependencies": {
-    "webpack": "^3.8.1"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
