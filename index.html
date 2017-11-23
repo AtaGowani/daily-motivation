@@ -3,12 +3,40 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/library/jquery-3.2.1.min.js"></script>
-    <script src="src/js/background.js"></script>
-    <script src="src/js/app.js"></script>
     <title>New Tab</title>
   </head>
-  <body>
+  <body id="body">
+    <span><img src="./src/imgs/settings.svg" alt="Settings" onclick="openNav()" class="settings"></span>
+    <div id="settings">
+      <span><img src="./src/imgs/cross-out.svg" alt="" onclick="closeNav()" class="close"></span>
+      <div class="options">
+        <p class="options-title">Available Themes</p>
+        <!-- <div class="container" onclick="setTheme('bubbles'); closeNav()">
+          <img src="./src/imgs/bubbles.png" alt="Bubbles">
+          <div class="overlay">
+            <div class="text">
+              Bubbles
+            </div>
+          </div>
+        </div> -->
+        <div class="container" onclick="setTheme('connected'); closeNav()">
+          <img src="./src/imgs/connected.png" alt="Connected">
+          <div class="overlay">
+            <div class="text">
+              Connected
+            </div>
+          </div>
+        </div>
+        <div class="container" onclick="setTheme('clear'); closeNav()">
+          <img src="./src/imgs/clear.png" alt="Clear">
+          <div class="overlay">
+            <div class="text">
+              Clear
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="quote-block">
       <div>
         <p id="quote"></p>
@@ -19,6 +47,10 @@
       <p>Made with <img src="src/imgs/Magic.svg" alt="magic"> by <a href="http://www.atagowani.com" class="linkColor">Ata Gowani</a>.</p>
       <p class="downloadExtension">Download the extension <a href="https://chrome.google.com/webstore/detail/dailymotivation/nonnkklkpbokmppgochfdamhihaijdin">here!</a></p>
     </footer>
-    <div id="wrap"></div>
+    <script src="./vendor/js/clear.js"></script>
+    <!-- <script src="./vendor/js/colorfulBubbles.js"></script> -->
+    <script src="./vendor/js/connectedCanvas.js"></script>
+    <script src="./vendor/js/settingsBar.js"></script>
+    <script src="./vendor/js/app.js"></script>
   </body>
 </html>
