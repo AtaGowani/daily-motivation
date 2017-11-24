@@ -32,20 +32,20 @@ let applyTheme = () => {
 
   if (theme === 'bubbles') {
     colorfulBubbles();
-  } else if (theme === 'connected') {
-    canvasDots();
-  } else {
+  } else if (theme === 'clear') {
     clear();
+  } else if (theme === 'connected' || !theme){
+    canvasDots();
   }
 }
 
 let setTheme = function(theme) {
   if (theme === 'bubbles') {
     localStorage.setItem('theme', theme);
+  } else if (theme === 'clear') {
+    localStorage.setItem('theme', theme);
   } else if (theme === 'connected') {
     localStorage.setItem('theme', theme);
-  } else {
-    localStorage.clear();
   }
   
   applyTheme();
