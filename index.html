@@ -6,9 +6,9 @@
     <title>New Tab</title>
   </head>
   <body id="body">
-    <span><img src="./src/imgs/settings.svg" alt="Settings" onclick="openNav()" class="settings"></span>
+    <span><img src="./src/imgs/settings.svg" alt="Settings" class="settings"></span>
     <div id="settings">
-      <span><img src="./src/imgs/cross-out.svg" alt="" onclick="closeNav()" class="close"></span>
+      <span><img src="./src/imgs/cross-out.svg" alt="Close" class="close"></span>
       <div class="options">
         <p class="options-title">Available Themes</p>
         <!-- <div class="container" onclick="setTheme('bubbles'); closeNav()">
@@ -19,7 +19,7 @@
             </div>
           </div>
         </div> -->
-        <div class="container" onclick="setTheme('connected'); closeNav()">
+        <div class="container" id="connected">
           <img src="./src/imgs/connected.png" alt="Connected">
           <div class="overlay">
             <div class="text">
@@ -27,7 +27,7 @@
             </div>
           </div>
         </div>
-        <div class="container" onclick="setTheme('clear'); closeNav()">
+        <div class="container" id="clear">
           <img src="./src/imgs/clear.png" alt="Clear">
           <div class="overlay">
             <div class="text">
@@ -45,7 +45,7 @@
     </div>
     <footer>
       <p>Made with <img src="src/imgs/Magic.svg" alt="magic"> by <a href="http://www.atagowani.com" class="linkColor">Ata Gowani</a>.</p>
-      <p class="downloadExtension">Download the extension <a href="https://chrome.google.com/webstore/detail/dailymotivation/nonnkklkpbokmppgochfdamhihaijdin">here!</a></p>
+      <!-- <p class="downloadExtension">Download the extension <a href="https://chrome.google.com/webstore/detail/dailymotivation/nonnkklkpbokmppgochfdamhihaijdin">here!</a></p> -->
     </footer>
     <script src="./vendor/js/clear.js"></script>
     <!-- <script src="./vendor/js/colorfulBubbles.js"></script> -->

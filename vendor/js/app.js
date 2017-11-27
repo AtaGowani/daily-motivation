@@ -1,3 +1,8 @@
+let settingsGear = document.getElementsByClassName('settings')[0];
+let closeButton = document.getElementsByClassName('close')[0];
+let connectedThemeOption = document.getElementById('connected');
+let clearThemeOption = document.getElementById('clear');
+
 let quote = '';
 let author = '';
 
@@ -51,5 +56,26 @@ let setTheme = function (theme) {
   applyTheme();
 };
 
+/* ADD ONLOAD EVENTS */
+
 window.onload = applyTheme();
 window.onload = newQuote();
+
+/* ADD ALL THE ON CLICK EVENT LISTERNERS */
+settingsGear.addEventListener('click', () => {
+  openNav();
+});
+
+closeButton.addEventListener('click', () => {
+  closeNav();
+});
+
+connectedThemeOption.addEventListener('click', () => {
+  setTheme('connected');
+  closeNav();
+});
+
+clearThemeOption.addEventListener('click', () => {
+  setTheme('clear');
+  closeNav();
+});
