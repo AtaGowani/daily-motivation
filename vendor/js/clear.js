@@ -1,4 +1,7 @@
-let clear = () => {
+let clear = (textColor = '#000') => {
+
+  let body = document.querySelector('body');
+  body.style.color = textColor;
 
   if (document.querySelector('canvas')) {
     // If there is an existing canvas element

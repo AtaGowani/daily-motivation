@@ -1,4 +1,7 @@
-var canvasDots = function () {
+var canvasDots = function (colorOfNetwork = '#000', backgroundColor = '#fff', textColor = '#000') {
+
+  let body = document.querySelector('body');
+  body.style.color = textColor;
 
   if (document.getElementById('wrap')) {
     // If the div with dots exists
@@ -20,12 +23,12 @@ var canvasDots = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     canvas.style.display = 'block';
+    canvas.style.background = backgroundColor;
 
     // Add the canvas element to the DOM
     document.querySelector('body').appendChild(canvas);
 
-    var colorDot = '#000',
-        color = '#000';
+    var colorDot = color = colorOfNetwork;
 
     // Detail for the look of the dots and lines
     ctx.fillStyle = colorDot;
@@ -127,7 +130,7 @@ var canvasDots = function () {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      colorDot = '#000', color = '#000';
+      colorDot = color = colorOfNetwork;
 
       // Detail for the look of the dots and lines
       ctx.fillStyle = colorDot;
