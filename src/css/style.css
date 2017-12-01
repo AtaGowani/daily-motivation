@@ -212,3 +212,55 @@ div.overlay {
   margin-top: 0;
   min-width: 150px;
 }
+
+.tooltip {
+  width: 0px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  opacity: 0;
+  animation: boxSlideIn forwards;
+  animation-duration: 1s;
+  max-height: 45px;
+  animation-delay: 1s;
+  font-size: 15px;
+
+  /* Position the tooltip */
+  position: absolute;
+  left: 55px;
+  top: 15px;
+  z-index: 1;
+}
+
+/* Arrow next to the tooltip */
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 25%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip-close {
+  height: 11px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  opacity: 0.8;
+}
+
+.tooltip-close:hover {
+  opacity: 1;
+}
+
+@keyframes boxSlideIn {
+  100% {
+    opacity: 0.5;
+    width: 120px;
+  }
+}

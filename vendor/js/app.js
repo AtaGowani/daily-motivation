@@ -1,5 +1,6 @@
 let settingsGear = document.getElementsByClassName('settings')[0];
 let closeButton = document.getElementsByClassName('close')[0];
+let closeButtonTooltip = document.getElementsByClassName('tooltip-close')[0];
 let connectedThemeOption = document.getElementById('connected');
 let connectedBlueThemeOption = document.getElementById('connectedBlue');
 let clearThemeOption = document.getElementById('clear');
@@ -67,10 +68,15 @@ window.onload = newQuote();
 /* ADD ALL THE ON CLICK EVENT LISTERNERS */
 settingsGear.addEventListener('click', () => {
   openNav();
+  turnTooltipOff();
 });
 
 closeButton.addEventListener('click', () => {
   closeNav();
+});
+
+closeButtonTooltip.addEventListener('click', () => {
+  turnTooltipOff();
 });
 
 connectedThemeOption.addEventListener('click', () => {
@@ -95,6 +101,27 @@ clearThemeOption.addEventListener('click', () => {
   setTheme('clear');
   closeNav();
 });
+
+function checkStorageForTooltipInformation() {
+  let hide = localStorage.getItem('hideTooltip');
+
+  if (hide) {
+    let tooltipElement = document.getElementsByClassName('tooltip')[0];
+    let parent = tooltipElement.parentElement;
+
+    // Remove the element
+    parent.removeChild(tooltipElement);
+  }
+}
+
+/* CHECK TO SEE IF TOOLTIP HAS ALREADY BEEN SHOW */
+checkStorageForTooltipInformation();
+
+function turnTooltipOff() {
+  let show = localStorage.setItem('hideTooltip', true);
+
+  checkStorageForTooltipInformation();
+}
 
 function settingGearColorInvert(invert) {
   if (invert) {
@@ -121,3 +148,17 @@ function settingGearColorInvert(invert) {
     }
   }
 }
+
+/** SCRIPT TO REDIRECT USER TO FORM AT UNINSTALLATION **/
+/* Check whether new version is installed */
+chrome.runtime.onInstalled.addListener(function (details) {
+  /* other 'reason's include 'update' */
+  if (details.reason == "install") {
+    /* If first install, set uninstall URL */
+    var uninstallGoogleFormLink = 'https://docs.google.com/forms/d/e/1FAIpQLSfym2cRHxdZZCzKVn0eWVobWGjnrRLu64QPw19x7GR77tCWfQ/viewform?usp=pp_url&entry.1591633300=Comments&entry.326955045&entry.1696159737';
+    /* If Chrome version supports it... */
+    if (chrome.runtime.setUninstallURL) {
+      chrome.runtime.setUninstallURL(uninstallGoogleFormLink);
+    }
+  }
+});
