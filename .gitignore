@@ -2,3 +2,4 @@
 manifest.json
 ChromeExtensionSource
 node_modules
+.vscode
