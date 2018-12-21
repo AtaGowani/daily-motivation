@@ -111,9 +111,9 @@ canvas {
 
 img.settings {
   margin: 1rem;
-  opacity: 0.3;
+  opacity: 0.6;
   position: absolute;
-  height: 30px;
+  height: 35px;
 }
 
 img.settings:hover {
