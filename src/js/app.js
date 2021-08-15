@@ -6,6 +6,8 @@ let connectedBlueThemeOption = document.getElementById('connectedBlue');
 let clearThemeOption = document.getElementById('clear');
 let connectedDarkBlueThemeOption = document.getElementById('connectedDarkBlue');
 
+const QUOTES_API_URL = "https://api.quotable.io/random";
+
 let quote = '';
 let author = '';
 
@@ -22,17 +24,45 @@ function loadJSON(callback) {
   xobj.send(null);
 }
 
+
+async function fetchQuote(){
+  
+  let response = await fetch(QUOTES_API_URL);
+  let responseJson = await response.json();
+
+  console.log("fetched quote");
+  return {quote: responseJson["content"], author:responseJson["author"]};
+}
+
 function newQuote() {
-  loadJSON((response) => {
-    // Parse JSON string into object
-    let quotes = JSON.parse(response);
-    let randomNumber = Math.random() * (Object.keys(quotes).length - 1);
-    randomNumber = Math.round(randomNumber);
-    quote = quotes[randomNumber].quote;
-    author = quotes[randomNumber].author;
-    document.getElementById('quote').innerHTML = quote;
-    document.getElementById('author').innerHTML = author;
-  })
+
+  // try to fetch quote from api
+
+  fetchQuote().then(({quote, author})=>{
+    setQuote(quote, author);
+  }).catch((err)=>{
+    //fall-back to quotes from json file
+
+    console.log("Error fetching quote : ",err);
+    
+    loadJSON((response) => {
+      // Parse JSON string into object
+      console.log("loading quotes from json file");
+      let quotes = JSON.parse(response);
+      let randomNumber = Math.random() * (Object.keys(quotes).length - 1);
+      randomNumber = Math.round(randomNumber);
+      quote = quotes[randomNumber].quote;
+      author = quotes[randomNumber].author;
+      setQuote(quote, author);
+    });
+
+  });
+}
+
+function setQuote(quote, author){
+  console.log("setting quote :",quote);
+  document.getElementById('quote').innerHTML = quote;
+  document.getElementById('author').innerHTML = author;
 }
 
 let applyTheme = () => {
