@@ -138,12 +138,6 @@ connectedDarkThemeOption.addEventListener('click', () => {
   closeNav();
 });
 
-connectedDarkThemeOption.addEventListener('click', () => {
-  setTheme('clear');
-  setTheme('connectedDark');
-  closeNav();
-});
-
 clearThemeOption.addEventListener('click', () => {
   setTheme('clear');
   closeNav();

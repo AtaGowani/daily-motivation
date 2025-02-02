@@ -83,7 +83,7 @@ let applyTheme = () => {
     settingGearColorInvert(true);
     canvasDots('#fff', '#000', '#fff');
   } else if (theme === 'clearDark') {
-    settingGearColorInvert(false);
+    settingGearColorInvert(true);
     clear('#fff', '#000');
   }
 };
@@ -127,12 +127,6 @@ connectedBlueThemeOption.addEventListener('click', () => {
 connectedDarkBlueThemeOption.addEventListener('click', () => {
   setTheme('clear');
   setTheme('connectedDarkBlue');
-  closeNav();
-});
-
-connectedDarkThemeOption.addEventListener('click', () => {
-  setTheme('clear');
-  setTheme('connectedDark');
   closeNav();
 });
 
