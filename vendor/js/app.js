@@ -5,8 +5,10 @@ let connectedThemeOption = document.getElementById('connected');
 let connectedBlueThemeOption = document.getElementById('connectedBlue');
 let clearThemeOption = document.getElementById('clear');
 let connectedDarkBlueThemeOption = document.getElementById('connectedDarkBlue');
+let connectedDarkThemeOption = document.getElementById('connectedDark');
+let clearDarkThemeOption = document.getElementById('clearDark');
 
-const QUOTES_API_URL = "https://apiooo.quotable.io/random?tags='Wisdom|Happiness|Inspirational'";
+const QUOTES_API_URL = "https://api.quotable.io/random?tags='Wisdom|Happiness|Inspirational'";
 
 let quote = '';
 let author = '';
@@ -65,9 +67,7 @@ function setQuote(quote, author) {
 let applyTheme = () => {
   let theme = localStorage.getItem('theme');
 
-  if (theme === 'bubbles') {
-    colorfulBubbles();
-  } else if (theme === 'clear') {
+  if (theme === 'clear') {
     settingGearColorInvert(false);
     clear();
   } else if (theme === 'connected' || !theme) {
@@ -79,6 +79,12 @@ let applyTheme = () => {
   } else if (theme === 'connectedDarkBlue') {
     settingGearColorInvert(true);
     canvasDots('#5cdb95', '#05386b', '#edf5e1');
+  } else if (theme === 'connectedDark') {
+    settingGearColorInvert(true);
+    canvasDots('#fff', '#000', '#fff');
+  } else if (theme === 'clearDark') {
+    settingGearColorInvert(true);
+    clear('#fff', '#000');
   }
 };
 
@@ -124,8 +130,19 @@ connectedDarkBlueThemeOption.addEventListener('click', () => {
   closeNav();
 });
 
+connectedDarkThemeOption.addEventListener('click', () => {
+  setTheme('clear');
+  setTheme('connectedDark');
+  closeNav();
+});
+
 clearThemeOption.addEventListener('click', () => {
   setTheme('clear');
+  closeNav();
+});
+
+clearDarkThemeOption.addEventListener('click', () => {
+  setTheme('clearDark');
   closeNav();
 });
 
