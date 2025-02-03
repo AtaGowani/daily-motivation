@@ -1,14 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Daily Motivation - Motivational Quotes",
   "version": "2.4.14",
   "description": "Start every search with motivation. This extension presents you with a motivational quote every time you open a new tab.",
 
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js",
+    "type": "module"
   },
-
   "chrome_url_overrides" : {
     "newtab": "index.html"
   }
